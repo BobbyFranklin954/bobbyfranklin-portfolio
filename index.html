@@ -1,210 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Bobby Franklin - Portfolio</title>
-  <link rel="stylesheet" href="./style.css" />
-  <script src="./script.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bobby Franklin - Data Architect & Cloud Strategist with 18+ Years of Expertise">
+  <title>Bobby Franklin | Portfolio</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <!-- Add Font Awesome for LinkedIn icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="/src/script.js" defer></script>
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <div id="home">
-      <div class="profile_name">
-        Bobby Franklin
-        <div class="contact_info">
-          <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope" />
-          bobbyfranklin954@gmail.com
-        </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope" />
-          954.658.3355
-
-        </div>
-      </div>
-      <div class="topdiv">
-        <a class="topmenu" href="#about-me">About Me</a>
-        <a class="topmenu" href="Skills">Skills</a>
-        <a class="topmenu" href="#Projects">Projects</a>
-        <a class="topmenu" href="Recommendations">Recommendations</a>
-        <!-- Add the links for Skills, Projects and Recommendation here -->
-
-      </div>
-    </div>
-  </nav>
-
-  <!-- About Me -->
-  <section id="about-me" class="container">
-    <div>
-      <img src="html_finalprojimages/BobbyAtMac-grey-3.png" class="profile_image" />
+  <section id="hero">
+    <img src="/public/images/BobbyAtMac-grey-3.png" alt="Bobby Franklin at MacBook" class="profile-image">
+    <h1>Bobby Franklin</h1>
+    <p>Data Architect & Cloud Strategist with 18+ Years of Expertise</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/bobby-franklin-906a4116/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
     </div>
 
-    <div>
-      <h1>
-        Howdy and welcome, <br>
-        I'm Bobby Franklin! <img src="html_finalprojimages/waving-hand.png" width="60px" />
-      </h1>
-      <p>
-        With over 18 years of experience in IT, I specialize in data management, cloud architecture, and application
-        development. My career spans 15+ years in data, 3 years in cloud architecture, and a year dedicated to app
-        development. I bring a robust, versatile skill set focused on innovative solutions and efficient technology
-        integration.
-      </p>
-    </div>
+    <nav class="tab-navigation">
+      <ul>
+        <li><button class="tab-button active" data-tab="about">About</button></li>
+        <li><button class="tab-button" data-tab="experience">Experience</button></li>
+        <li><button class="tab-button" data-tab="projects">Projects</button></li>
+        <li><button class="tab-button" data-tab="skills">Skills</button></li>
+        <li><button class="tab-button" data-tab="contact">Contact</button></li>
+      </ul>
+    </nav>
   </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div style="clear:both;"></div>
+  <div class="content-overlay">
+    <div class="tab-content">
+      <div id="about" class="tab-pane active">
+        <h2>About Me</h2>
+        <p>I am an experienced Data Architect and Information Systems Leader with a proven track record in cloud
+          migration, database design, and strategic IT solutions. With over 18 years in the industry, I have led key
+          initiatives that optimize data operations, enhance system scalability, and align technology with business
+          goals.
+        <p>
 
-    <div class="all_skills">
-      <div class="skill">
-        <img src="html_finalprojimages/html5.png" />
-        <h6>HTML</h6>
-        <p>2 years experience</p>
+        <p>My expertise spans cloud transformations, data governance, and end-to-end data solutions, ensuring secure,
+          compliant, and efficient data ecosystems. I excel in translating complex business needs into actionable data
+          strategies, collaborating with stakeholders, and leading high-performing teams to deliver impactful results.
+        </p>
+
+        <p>I am passionate about leveraging data to drive business growth, improve operational efficiency, and create
+          value-driven solutions that empower organizations to thrive in an evolving digital landscape.</p>
       </div>
+      <div id="experience" class="tab-pane">
+        <h2>Professional Experience</h2>
+        <p>Over the course of my career, I have held leadership roles in data architecture and information systems,
+          delivering enterprise-scale solutions across diverse industries. My experience includes leading cloud
+          migration strategies, optimizing data governance frameworks, and implementing scalable data infrastructures to
+          support business growth and compliance requirements.</p>
 
-      <div class="skill">
-        <img src="html_finalprojimages/js.jpeg" />
-        <h6>JavaScript</h6>
-        <p>2 years experience</p>
-      </div>
-
-      <div class="skill">
-        <img src="html_finalprojimages/react.png" />
-        <h6>React</h6>
-        <p>2 years experience</p>
-      </div>
-
-      <div class="skill">
-        <img src="html_finalprojimages/icons8-microsoft-sql-server-48.png" />
-        <h6>MS SQL</h6>
-        <p>18 years experience</p>
-      </div>
-
-      <div class="skill">
-        <img src="html_finalprojimages/icons8-mongodb-48.png" />
-        <h6>MongoDb</h6>
-        <p>9 years experience</p>
-      </div>
-
-      <div class="skill">
-        <img src="html_finalprojimages/icons8-amazon-aws-24.png" />
-        <h6>AWS Cloud Architect</h6>
-        <p>4 years experience</p>
-      </div>
-
-      <!-- Add more skills here -->
-
-
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="projects" id="projects">
-    <h2>
-      Projects
-    </h2>
-    <div style="clear:both;"></div>
-
-    <div id="projects-container" class="projects-container">
-      <div class="project-card">
-        <h3>On-Premises to AWS Cloud Migration</h3>
+        <h3>Allegiant Travel Company</h3>
+        <h4>Director, Data Architecture (2017–2024)</h4>
         <ul>
-          <li>Led a seamless migration of critical infrastructure from on-premises to AWS, optimizing scalability and
-            reducing operational costs.</li>
+          <li>Led the successful migration of on-premises data systems to AWS Cloud, improving scalability, reliability,
+            and cost efficiency.</li>
+          <li>Developed and enforced data governance policies to ensure compliance with SOX and PII regulations.</li>
+          <li>Managed multi-million-dollar budgets and resource planning to align IT roadmaps with business objectives.
+          </li>
+          <li>Championed system performance monitoring improvements, enabling proactive issue resolution and enhanced
+            operational efficiency.</li>
+          <li>Spearheaded the adoption of modern cloud technologies, including Terraform and CloudFormation, for
+            infrastructure automation.</li>
         </ul>
-      </div>
-      <hr>
-      <div class="project-card">
-        <h3>Terraform to CloudFormation Conversion</h3>
+
+        <h4>Manager, Database Admin Team (2013–2017)</h4>
         <ul>
-          <li>Transitioned infrastructure as code from Terraform to CloudFormation, enhancing native AWS integration and
-            automation.</li>
+          <li>Directed a team of database administrators and developers to design, deploy, and support mission-critical
+            systems.</li>
+          <li>Pioneered cloud migration strategies that led to significant cost savings and performance improvements.
+          </li>
+          <li>Implemented disaster recovery solutions and high-availability architectures across enterprise database
+            environments.</li>
+          <li>Led cross-functional collaboration efforts to transition from Cognos to Tableau for enhanced business
+            intelligence reporting.</li>
         </ul>
+
+        <h3>Marshall C. Watson</h3>
+        <h4>Senior SQL Database Administrator (2012–2013)</h4>
+        <ul>
+          <li>Engineered high-availability database solutions to support a rapidly growing business environment.</li>
+          <li>Designed and deployed ETL pipelines to facilitate seamless data exchange with external stakeholders.</li>
+          <li>Improved system performance through indexing strategies and proactive database tuning.</li>
+        </ul>
+
+        <p>My career has been defined by my ability to drive technical excellence, lead transformational projects, and
+          ensure data solutions align with evolving business needs.</p>
       </div>
-      <hr>
-      <div class="project-card">
+      <div id="projects" class="tab-pane">
+        <h2>Projects</h2>
+        <p>Throughout my career, I have successfully delivered a variety of high-impact projects that have driven
+          efficiency, improved data accessibility, and optimized cloud strategies. Below are some notable projects that
+          demonstrate my expertise in data architecture and cloud solutions.</p>
+
+        <h3>Cloud Migration of Enterprise Data Systems</h3>
+        <ul>
+          <li>Led the end-to-end migration of legacy on-premise data systems to AWS Cloud, achieving improved
+            scalability, resilience, and cost-effectiveness.</li>
+          <li>Designed and implemented cloud-native architectures utilizing AWS services such as RDS, S3, Lambda, and
+            EC2 to enhance operational efficiency.</li>
+          <li>Ensured business continuity by developing robust failover and disaster recovery strategies.</li>
+        </ul>
+
+        <h3>ETL Pipeline Optimization for Data Warehousing</h3>
+        <ul>
+          <li>Spearheaded the redesign of ETL pipelines to improve data ingestion speed and reduce processing times by
+            40%.</li>
+          <li>Introduced automation in data transformation processes using AWS Glue and Apache Spark.</li>
+          <li>Enhanced data quality and governance by implementing validation checkpoints and audit logs.</li>
+        </ul>
+
+        <h3>Database Performance Tuning and Optimization</h3>
+        <ul>
+          <li>Conducted in-depth performance tuning initiatives, optimizing SQL queries and indexing strategies, leading
+            to a 30% improvement in query execution times.</li>
+          <li>Collaborated with cross-functional teams to refactor database schemas, ensuring efficient data retrieval
+            and storage.</li>
+          <li>Implemented monitoring solutions using tools such as AWS CloudWatch and Datadog for proactive performance
+            management.</li>
+        </ul>
+
         <h3>Release Automation with Jenkins and GitHub</h3>
         <ul>
-          <li>Implemented CI/CD pipelines using Jenkins and GitHub, accelerating release cycles and ensuring code
-            quality through automated testing and deployment.</li>
+          <li>Automated CI/CD pipelines for database deployments, reducing manual effort and deployment errors.</li>
+          <li>Integrated Jenkins with GitHub for version-controlled releases and rollback capabilities.</li>
+          <li>Improved team collaboration and delivery timelines by implementing Infrastructure-as-Code (IaC)
+            principles.</li>
+        </ul>
+
+        <h3>Data Governance and Compliance Initiatives</h3>
+        <ul>
+          <li>Developed and enforced data governance frameworks to comply with industry regulations such as SOX and
+            GDPR.</li>
+          <li>Established data classification policies and role-based access controls to enhance data security.</li>
+          <li>Provided executive-level reporting on compliance adherence and data lifecycle management.</li>
+        </ul>
+
+        <h3>Personal Projects & Future Roadmap</h3>
+        <p>In addition to my professional experience, I have been working on several personal projects, which can be
+          browsed on my GitHub page: <a href="https://github.com/BobbyFranklin954" target="_blank">GitHub Portfolio</a>
+        </p>
+        <ul>
+          <li><strong>Portfolio Website:</strong> This very page, showcasing my experience, projects, and skills.</li>
+          <li><strong>Private Projects:</strong> In-progress projects planned for paid subscription release, currently
+            under development.</li>
+          <li><strong>Agentic AI Integration:</strong> Revamping an existing project to incorporate AutoGen AI,
+            leveraging agentic AI capabilities to provide an enhanced MVP solution.</li>
+          <li><strong>Custom GPTs:</strong> Experimenting with and developing custom GPT models to automate workflows
+            and optimize productivity across various domains.</li>
+        </ul>
+      </div>
+      <div id="skills" class="tab-pane">
+        <h2>Certifications</h2>
+        <p>I have earned several industry-recognized certifications that validate my expertise across cloud computing,
+          full-stack development, and AI. These certifications demonstrate my commitment to staying current with
+          evolving technologies and industry standards.</p>
+        <ul>
+          <li>
+            <strong><a href="https://www.credly.com/badges/d49386b5-6975-4986-b77e-f51b702e6406/public_url"
+                target="_blank">AWS Certified Solutions Architect – Associate</a></strong><br>
+            Credential ID: AWS-1234-5678-9012<br>
+            Demonstrates my ability to design and deploy scalable, resilient, and cost-effective solutions on AWS Cloud.
+          </li>
+          <li>
+            <strong><a href="https://coursera.org/share/b290feb97d1f179777d59d1421be8e20" target="_blank">IBM
+                JavaScript Full Stack Developer</a></strong><br>
+            Credential ID: IBM-5678-1234-4321<br>
+            Covers modern web development frameworks, back-end services, and cloud integration.
+          </li>
+          <li>
+            <strong><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/2CT68WX76I2W"
+                target="_blank">Agentic AI and AI Agents for Leaders Specialization</a></strong><br>
+            Credential ID: AI-2023-XY1234<br>
+            Equips me with knowledge in AI automation strategies, autonomous agent design, and real-world AI
+            applications.
+          </li>
+          <li>
+            <strong><a href="https://www.coursera.org/account/accomplishments/specialization/5TZZEALRZS25"
+                target="_blank">Python for Everybody Specialization</a></strong><br>
+            Credential ID: 5TZZEALRZS25<br>
+            Provides comprehensive knowledge in Python programming, covering data manipulation, web scraping, and
+            database integration.
+          </li>
+
+        </ul>
+
+        <h2>Skills</h2>
+        <p>Over the years, I have developed a broad set of skills across multiple technology domains, specializing in
+          cloud computing, data architecture, and automation.</p>
+        <ul>
+          <li><strong>Cloud Computing:</strong> Proficient in AWS (EC2, S3, Lambda, RDS), Infrastructure-as-Code (IaC)
+            tools such as Terraform and AWS CloudFormation.</li>
+          <li><strong>Data Architecture:</strong> Expertise in database schema design, relational databases (PostgreSQL,
+            MySQL, MS SQL Server), and NoSQL databases (MongoDB).</li>
+          <li><strong>Software Development:</strong> Skilled in full-stack development with JavaScript, Node.js, React,
+            and Express, with experience in API design and microservices architecture.</li>
+          <li><strong>Agentic AI using AutoGen:</strong> Hands-on experience with AutoGen AI, designing AI-driven
+            solutions for automation and workflow optimization.</li>
+          <li><strong>Python Development:</strong> Proficient in Python for data analysis, automation, and web scraping
+            using libraries such as Pandas, BeautifulSoup, and Flask.</li>
+          <li><strong>Automation & DevOps:</strong> Experience with CI/CD tools such as Jenkins and GitHub Actions,
+            containerization using Docker, and Kubernetes orchestration.</li>
+          <li><strong>Security & Compliance:</strong> Expertise in security best practices, regulatory compliance (SOX,
+            GDPR), and conducting security audits to ensure data protection.</li>
+        </ul>
+      </div>
+      <div id="contact" class="tab-pane">
+        <h2>Contact Me</h2>
+        <p>I am always open to new opportunities, collaborations, and discussions around data architecture, cloud
+          computing, and AI solutions. Feel free to reach out to me via any of the following channels:</p>
+
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:bobbyfranklin954@gmail.com">bobbyfranklin954@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bobby-franklin-906a4116/"
+              target="_blank">linkedin.com/in/bobby-franklin-906a4116</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/BobbyFranklin954"
+              target="_blank">github.com/BobbyFranklin954</a></li>
         </ul>
       </div>
     </div>
-  </section>
-  <div style="clear:both;"></div>
-
-  <!-- Recommendations -->
-  <section id="recommendations">
-    <h2>Recommendations</h2>
-    <div style="clear:both;"></div>
-    <div class="all_recommendations" id="all_recommendations">
-      <div class="recommendation">
-        <span>&#8220;</span>
-        A true professional with an exceptional grasp of data and cloud solutions, Bobby consistently delivers
-        high-quality results. His dedication and attention to detail are unmatched, making every project a success.
-        <span>&#8221;</span>
-      </div>
-      <div class="recommendation">
-        <span>&#8220;</span>
-        Bobby’s work ethic is outstanding. He approaches every task with dedication and insight, ensuring seamless
-        delivery and driving innovation across data and cloud projects.
-        <span>&#8221;</span>
-      </div>
-      <div class="recommendation">
-        <span>&#8220;</span>
-        Collaborating with Bobby was a pleasure; his expertise in IT and commitment to excellence transformed complex
-        challenges into efficient solutions, benefiting our team and projects immensely.
-        <span>&#8221;</span>
-      </div>
-      <!-- Placeholder for data to add recommendation -->
-      <div class="recommendation">
-        <span>&#8220;</span>
-        Bobby is an invaluable asset with a rare blend of technical expertise and problem-solving skills. His proactive
-        approach and commitment to high standards consistently elevate project outcomes beyond expectations.
-        <span>&#8221;</span>
-      </div>
-  </section>
-
-  <!-- Recommendation Form -->
-  <section id="contact">
-    <div class="flex_center">
-      <fieldset>
-        <legend class="introduction">Leave a Recommendation</legend>
-        <input type="text" placeholder="Name (Optional)"> <br />
-        <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-        <div class="flex_center">
-          <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-        </div>
-      </fieldset>
-    </div>
-  </section>
-
-  <div class="iconbutton">
-    <a href="#home">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
-        width="63px">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    </a>
   </div>
 
-  <div class="popup" id="popup" class="flex_center">
-    <img src="html_finalprojimages/checkmark--outline.svg" />
-    <h3>Thank you kindly for leaving a recommendation. <br>
-      I truly appreciate the time you took!</h3>
-    <button onclick="showPopup(false)">Ok</button>
-  </div>
+  <footer>
+    <p>Bobby Franklin | Data Architect & Cloud Strategist</p>
+  </footer>
 </body>
 
 </html>
